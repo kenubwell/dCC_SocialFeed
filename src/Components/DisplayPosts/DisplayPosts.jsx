@@ -3,7 +3,7 @@ import './DisplayPosts.css';
 
 const DisplayPosts = (props) => {
     return (  
-        <div>
+        <div className = 'container'>
         {props.entryPosts.map((post, index) => { //use curly brackets to write JavaScript within HTML. The index will iterate the index values (Note it starts at 0)
         return (
             <div className = 'post-border' key = {index}>

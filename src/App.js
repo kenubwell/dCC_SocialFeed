@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
 
-  const [posts, setPosts] = useState([{personName: 'Ken', personPost: 'Working on the Social Feed React Project'}]);
+  const [posts, setPosts] = useState([{personName: 'Ken Blackwell', personPost: 'Working on the Social Feed React Project!'}]);
 
   function addNewPost(post){
     let tempPosts = [...posts, post]; //...is a spread operator to include the objects.  If not spread it would include the nested array
@@ -18,10 +18,10 @@ function App() {
       <div>
         <NavBar/>
       </div>
-      <div className = 'border-box container'>
+      <div className = "border-box">
         <CreatePost addNewPost={addNewPost}/>
       </div>
-      <div className = 'container'>
+      <div>
         <DisplayPosts entryPosts ={posts}/>
       </div>
     </div>
