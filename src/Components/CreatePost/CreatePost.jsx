@@ -20,7 +20,7 @@ const CreatePost = (props) => {
     return (  
 
     //contains boostrap css classes
-   <form onSubmit = {handleSubmit} className = 'container'>
+   <form onSubmit = {handleSubmit} className = 'form-background container'>
         <div className = 'form-group'>
             <label for = 'Name' className = 'label-title'>Name</label>
             <input type = 'text' id = 'Name' placeholder = 'Enter Full Name' className = 'form-control' value={personName} onChange={(event) => setName(event.target.value)}/> 
