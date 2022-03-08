@@ -21,7 +21,7 @@ function App() {
       <div className = 'border-box container'>
         <CreatePost addNewPost={addNewPost}/>
       </div>
-      <div className = 'border-box container'>
+      <div className = 'container'>
         <DisplayPosts entryPosts ={posts}/>
       </div>
     </div>

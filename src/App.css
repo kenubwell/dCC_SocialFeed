@@ -3,11 +3,12 @@
 }
 
 .border-box {
-  border: 1px;
+  border: 2px;
   border-style: solid;
   border-color: black;
   margin: 3em;
   padding: 1.5em;
+  border-radius: 20px;
 }
 
 .App-header {
