@@ -1,0 +1,24 @@
+.container-thumbs {
+  display: flex;
+  justify-content: right;
+}
+
+.first-button {
+  padding-right: 0.5em;
+}
+
+.active {
+  background-color: limegreen;
+}
+
+.inactive {
+  background-color: white;
+}
+
+.active2 {
+  background-color: red;
+}
+
+.inactive2 {
+  background-color: white;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import './DisplayPosts.css';
+import Post from "../Post/Post";
 
 const DisplayPosts = (props) => {
     return (  
@@ -9,7 +10,7 @@ const DisplayPosts = (props) => {
             <div className = 'post-border' key = {index}>
                 <div><p className = 'post-name'>{post.personName}</p></div>
                 <div><p className = 'post-content'>{post.personPost}</p></div>
-                <div>Place Holder: Thumbs up/Thumps down</div>
+                <div><Post/></div>
             </div>
         )
         })}
