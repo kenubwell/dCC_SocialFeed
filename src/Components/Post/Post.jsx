@@ -9,8 +9,12 @@ const Post = (props) => {
     const [thumbsDownClass, setThumbsDown] = useState('inactive2');
 
     function handleClick(){
-        if(thumbsUpClass === 'inactive'){
+        if(thumbsUpClass === 'inactive' && thumbsDownClass === 'inactive2'){
             setThumbsUp('active');
+        }
+        else if (thumbsUpClass === 'inactive' && thumbsDownClass === 'active2'){
+            setThumbsUp('active');
+            setThumbsDown('inactive2')
         }
         else{
             setThumbsUp("inactive");
@@ -19,8 +23,12 @@ const Post = (props) => {
     }
 
     function handleSecondClick(){
-        if(thumbsDownClass === 'inactive2'){
+        if(thumbsDownClass === 'inactive2' && thumbsUpClass === 'inactive'){
             setThumbsDown('active2');
+        }
+        else if (thumbsDownClass === 'inactive2' && thumbsUpClass === 'active'){
+            setThumbsDown('active2');
+            setThumbsUp('inactive');
         }
         else{
             setThumbsDown("inactive2");

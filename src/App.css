@@ -1,17 +1,14 @@
 .border-box {
+  display: flex;
   border: 2px;
   border-style: solid;
   border-color: black;
   margin-top: 3em;
-  margin-right: 35em;
-  margin-left: 35em;
+  margin-right: 36em;
+  margin-left: 36em;
   margin-bottom: 3em;
   padding: 1.5em;
   border-radius: 20px;
-}
-
-.app-body {
-  background-color: blue;
 }
 
 .App-header {
